@@ -36,6 +36,5 @@ git push -u origin main
 
 ## Things to edit
 
-- **WattGrid** (in `index.html`, search for `TODO`): replace the placeholder sentence with a short description.
-- **Contact**: the footer links to your GitHub only. Add an email or LinkedIn link there when you want one.
+- **Contact**: the footer links to LinkedIn, GitHub and Instagram. Add an email link there if you want one.
 - **Colors**: change the variables at the top of `style.css`.

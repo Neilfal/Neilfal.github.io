@@ -147,6 +147,7 @@ dd { margin: 4px 0 0; color: var(--ink-soft); }
 /* GROWTH */
 .growth { background: var(--paper); }
 .plain { list-style: none; margin: 0; padding: 0; }
+.plain.narrow { max-width: 720px; }
 .plain li { padding: 14px 0; border-top: 1px solid rgba(10, 26, 63, .2); }
 .plain li:last-child { border-bottom: 1px solid rgba(10, 26, 63, .2); }
 .fix dt { margin-top: 16px; }
@@ -173,7 +174,7 @@ dd { margin: 4px 0 0; color: var(--ink-soft); }
 .footer { background: var(--blue); color: var(--white); padding: clamp(64px, 9vw, 110px) 0 40px; }
 .footer h2 { font-size: clamp(2.6rem, 7vw, 5.5rem); letter-spacing: -0.04em; }
 .footer p { font-size: 1.15rem; }
-.footer .btn { margin-top: 8px; }
+.footer .hero-cta { margin-top: 8px; }
 .footer .fine { margin: 60px 0 0; font-size: .9rem; opacity: .8; }
 
 /* RESPONSIVE */
