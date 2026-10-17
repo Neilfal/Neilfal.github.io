@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nilanka Roy Chowdhury | Portfolio</title>
+  <meta name="description" content="B.Tech IT student at VIT building AI projects in Python: sign language recognition, Bayesian search agents and phone-as-controller games.">
+  <meta name="theme-color" content="#0A3CFF">
+  <meta property="og:title" content="Nilanka Roy Chowdhury | Portfolio">
+  <meta property="og:description" content="B.Tech IT student at VIT building AI projects in Python.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <header class="nav">
+    <a class="wordmark" href="#top" aria-label="Nilanka Roy Chowdhury, home">Nilanka</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#growth">Growth</a>
+      <a href="#goals">Goals</a>
+      <a class="pill" href="https://github.com/Neilfal" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas id="belief" aria-hidden="true"></canvas>
+      <div class="hero-text">
+        <p class="hero-kicker">B.Tech IT at Vellore Institute of Technology</p>
+        <h1>Nilanka<br>Roy Chowdhury</h1>
+        <p class="hero-sub">I build AI projects in Python: a sign language recogniser, a search agent that reasons with probabilities, and a game you steer with your phone.</p>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#projects">See my projects</a>
+          <a class="btn btn-ghost" href="https://github.com/Neilfal" target="_blank" rel="noopener">Open GitHub</a>
+        </div>
+      </div>
+      <p class="hero-hint" aria-hidden="true">Move your cursor. This grid is a belief map hunting for it, the same idea behind my WALL-E project. <span id="conf">Confidence 0%</span></p>
+    </section>
+
+    <div class="rope" aria-hidden="true"></div>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="lede">Four things I have built so far. Each one is on GitHub.</p>
+
+        <article class="project" style="--c: var(--coral)">
+          <div class="p-head">
+            <h3>ISL Bridge</h3>
+            <p class="tags">Python, MediaPipe, scikit-learn, Streamlit</p>
+          </div>
+          <div class="p-body">
+            <p>Recognises Indian Sign Language greetings from a camera or a short video clip. MediaPipe tracks 21 points on each hand and 33 on the body, each clip is resampled to 32 frames of 184 numbers, and a Random Forest picks the word. Below 40% confidence it says "not sure" instead of guessing.</p>
+            <p class="result"><strong>88.4%</strong> accuracy when tested on a signer the model had never seen (nine words, six signers, trained on the public INCLUDE dataset). A college team project.</p>
+            <p class="links">
+              <a href="https://isltext.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+              <a href="https://github.com/Neilfal/islsignbridge" target="_blank" rel="noopener">Source code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project" style="--c: var(--aqua)">
+          <div class="p-head">
+            <h3>WALL-E and EVE's Signal</h3>
+            <p class="tags">Python, NumPy, Bayesian inference</p>
+          </div>
+          <div class="p-body">
+            <p>An autonomous agent that explores a simulated map, collects noisy clues, manages a limited battery and works out where EVE is. It keeps a probability grid over her location, updates it after every reading, and picks its next move by how much it expects to learn versus how far it must travel. It never strands itself: getting back to a charger is a hard rule, not a reward.</p>
+            <p class="result"><strong>98 to 100%</strong> of 50 random missions per profile ended within 1.5 cells of EVE, with 25 unit tests and CI on Python 3.10 to 3.12. Pure Python and NumPy, no game engine.</p>
+            <p class="links">
+              <a href="https://github.com/Neilfal/walle-eve-signal" target="_blank" rel="noopener">Source code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project" style="--c: var(--sun)">
+          <div class="p-head">
+            <h3>Phone Controller</h3>
+            <p class="tags">HTML, JavaScript, Node.js, WebSockets</p>
+          </div>
+          <div class="p-body">
+            <p>Turns a phone into a real-time motion controller for a browser game running on a laptop. Scan a QR code or type a room code, and tilting the phone steers the game. Built for the "Anything but a Game Controller" challenge.</p>
+            <p class="links">
+              <a href="https://github.com/Neilfal/phone-controller" target="_blank" rel="noopener">Source code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project" style="--c: var(--blue)">
+          <div class="p-head">
+            <h3>WattGrid</h3>
+            <p class="tags">Python</p>
+          </div>
+          <div class="p-body">
+            <!-- TODO: replace this line with a one or two sentence description of WattGrid -->
+            <p>A Python project. Full write-up coming soon.</p>
+            <p class="links">
+              <a href="https://github.com/Neilfal/WattGrid" target="_blank" rel="noopener">Source code</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="wrap two-col">
+        <div>
+          <h2>About me</h2>
+          <p class="lede">I'm from Kolkata and study B.Tech IT at VIT. I did my ICSE and ISC at Delhi Public School Newtown.</p>
+          <p>Outside the lab I swim, competitively and for fun, and play water polo. I read widely across genres and eras, and I solve puzzles: Rubik's cubes, jigsaws, sudoku, Connections and crosswords.</p>
+        </div>
+        <div class="study">
+          <h3>What I'm studying</h3>
+          <dl>
+            <dt>Artificial Intelligence</dt>
+            <dd>Intelligent agents, search and heuristics, game playing, knowledge representation, probabilistic reasoning and machine learning fundamentals.</dd>
+            <dt>Data Structures and Algorithms</dt>
+            <dd>Arrays, linked lists, stacks, queues, trees, graphs, hashing, sorting and searching, and time and space complexity.</dd>
+            <dt>Object-Oriented Programming</dt>
+            <dd>Classes, inheritance, polymorphism, encapsulation and design principles.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRENGTHS -->
+    <section class="strengths" id="strengths">
+      <div class="wrap">
+        <h2>How I work</h2>
+        <div class="trio">
+          <div>
+            <h3>Analytical</h3>
+            <p>Sudoku and Rubik's cubes trained me to break a problem into clear, logical steps.</p>
+          </div>
+          <div>
+            <h3>Disciplined</h3>
+            <p>Years of competitive swimming taught me consistency, resilience and how to perform under pressure.</p>
+          </div>
+          <div>
+            <h3>Curious</h3>
+            <p>Reading across genres keeps me curious, and I enjoy picking up new ideas and skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROWTH -->
+    <section class="growth" id="growth">
+      <div class="wrap two-col">
+        <div>
+          <h2>Learning next</h2>
+          <ul class="plain">
+            <li><strong>Mathematics for ML.</strong> Strengthening linear algebra, probability and statistics.</li>
+            <li><strong>Advanced algorithms.</strong> Dynamic programming, graph optimisation and competitive problem solving.</li>
+            <li><strong>Core CS systems.</strong> Operating systems, computer networks and databases.</li>
+            <li><strong>Hands-on projects.</strong> Turning theory into practice, from building models to deploying them.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Working on myself</h2>
+          <dl class="fix">
+            <dt>Procrastination</dt>
+            <dd>I set small milestones with earlier, self-imposed deadlines.</dd>
+            <dt>Pressuring teammates</dt>
+            <dd>I listen first and agree on expectations together.</dd>
+            <dt>Overconfidence</dt>
+            <dd>I test my assumptions and ask for feedback early.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOALS -->
+    <section class="goals" id="goals">
+      <div class="wrap">
+        <h2>Where I'm headed</h2>
+        <ol class="path">
+          <li>
+            <h3>Now</h3>
+            <ul>
+              <li>Reach a CGPA of 9.0</li>
+              <li>Join VinnovateIT</li>
+              <li>Learn German</li>
+              <li>Improve my public speaking</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Next</h3>
+            <ul>
+              <li>Land an internship, after or during second year</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Later</h3>
+            <ul>
+              <li>M.Sc in Data Science or Artificial Intelligence</li>
+              <li>PhD in Artificial Intelligence</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <h2>Let's build something.</h2>
+      <p>The best way to reach me right now is through my code.</p>
+      <a class="btn btn-solid" href="https://github.com/Neilfal" target="_blank" rel="noopener">github.com/Neilfal</a>
+      <p class="fine">Built with plain HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
